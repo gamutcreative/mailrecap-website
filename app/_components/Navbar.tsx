@@ -5,7 +5,7 @@ export default function Navbar() {
         <a href="/" className="flex items-center gap-2">
           <span className="text-[#D42232]">✉</span>
           <span
-            className="text-2xl text-[#0C1461]"
+            className="text-2xl text-[#D42232]"
             style={{ fontFamily: "var(--font-pacifico)" }}
           >
             MailRecap

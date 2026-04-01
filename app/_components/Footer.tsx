@@ -7,7 +7,7 @@ export default function Footer() {
             <a href="/" className="flex items-center gap-2 mb-3">
               <span className="text-[#D42232]">✉</span>
               <span
-                className="text-xl text-white"
+                className="text-xl text-[#D42232]"
                 style={{ fontFamily: "var(--font-pacifico)" }}
               >
                 MailRecap
