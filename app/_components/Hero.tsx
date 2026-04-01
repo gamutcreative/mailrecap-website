@@ -51,6 +51,9 @@ export default function Hero() {
           </a>
         </div>
 
+        {/* Airmail stripe accent — brand motif */}
+        <div className="airmail-stripe h-2 w-48 mx-auto mt-12 rounded-full opacity-70"></div>
+
         {/* Mobile app mockup */}
         <div className="mt-16 max-w-xs mx-auto">
           <div className="relative bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl shadow-slate-400/30 border-4 border-slate-800">
