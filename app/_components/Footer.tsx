@@ -7,12 +7,15 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
           <div>
             <a href="/" className="flex items-center gap-2 mb-3">
-              <span className="text-[#D42232]">✉</span>
+              <svg width="20" height="20" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <path d="M10 20C10 17.2 12.2 15 15 15H65C67.8 15 70 17.2 70 20V60C70 62.8 67.8 65 65 65H15C12.2 65 10 62.8 10 60V20Z" stroke="#D42232" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                <path d="M10 22L40 44L70 22" stroke="#D42232" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
               <span
                 className="text-xl text-[#D42232]"
                 style={{ fontFamily: "var(--font-pacifico)" }}
               >
-                MailRecap
+                mailrecap.co
               </span>
             </a>
             <p className="text-sm max-w-xs leading-relaxed">
