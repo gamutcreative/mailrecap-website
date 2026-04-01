@@ -19,7 +19,7 @@ export default function Hero() {
         <div id="download" className="flex flex-col sm:flex-row items-center justify-center gap-4">
           {/* App Store */}
           <a
-            href="https://apps.apple.com/app/mailrecap"
+            href="https://apps.apple.com/us/app/mailrecap-co/id6756124597"
             className="flex items-center gap-3 bg-slate-900 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-700 transition-colors w-full sm:w-auto justify-center"
           >
             <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current" aria-hidden="true">
