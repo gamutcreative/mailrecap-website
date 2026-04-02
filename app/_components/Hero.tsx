@@ -1,116 +1,55 @@
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-[#E8EAF2] to-white">
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 bg-[#D42232]/10 text-[#D42232] px-4 py-1.5 rounded-full text-sm font-medium mb-8">
-          <span>★</span> 5 free scans to get started
-        </div>
+    <section className="relative pt-16 min-h-screen flex items-center overflow-hidden">
+      {/* Full-width lifestyle background — person at kitchen table, natural light */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=1600&q=80&auto=format&fit=crop')",
+        }}
+        aria-hidden="true"
+      />
+      {/* Warm dark overlay */}
+      <div className="absolute inset-0 bg-[#111827]/60" aria-hidden="true" />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-24 text-center text-white w-full">
         <h1
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 max-w-4xl mx-auto"
+          className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 max-w-3xl mx-auto"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
-          Scan, understand, and act on your mail{" "}
-          <span className="text-[#D42232]">— without the pile-up</span>
+          Your mail, finally under control.
         </h1>
-        <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Take a photo, get a plain-language summary, and know exactly what to do next.
-          MailRecap turns every piece of mail into a clear, actionable item.
+        <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
+          MailRecap turns every piece of physical mail into a clear, organized digital record — automatically.
         </p>
         <div id="download" className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          {/* App Store */}
           <a
             href="https://apps.apple.com/us/app/mailrecap-co/id6756124597"
-            className="flex items-center gap-3 bg-slate-900 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-700 transition-colors w-full sm:w-auto justify-center"
+            className="flex items-center gap-3 bg-[#D42232] text-white px-7 py-4 rounded-xl font-semibold hover:bg-[#b01c29] transition-colors w-full sm:w-auto justify-center shadow-lg"
           >
-            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current" aria-hidden="true">
+            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current shrink-0" aria-hidden="true">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.15-2.24 1.31-2.22 3.91.03 3.1 2.72 4.13 2.75 4.14l-.08.17zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
             </svg>
             <span>
-              <span className="block text-xs text-slate-300 leading-none">Download on the</span>
+              <span className="block text-xs text-red-200 leading-none">Download on the</span>
               <span className="block text-base leading-tight">App Store</span>
             </span>
           </a>
-          {/* Google Play */}
           <a
             href="https://play.google.com/store/apps/details?id=com.mailrecap"
-            className="flex items-center gap-3 bg-slate-900 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-700 transition-colors w-full sm:w-auto justify-center"
+            className="flex items-center gap-3 bg-white/15 border border-white/40 text-white px-7 py-4 rounded-xl font-semibold hover:bg-white/25 transition-colors w-full sm:w-auto justify-center backdrop-blur-sm"
           >
-            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current" aria-hidden="true">
+            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current shrink-0" aria-hidden="true">
               <path d="M3.18 23.76c.3.17.64.24.99.2l.11-.03L13.65 12 4.28.07l-.11-.03a1.4 1.4 0 00-.99.2C2.85.57 2.5 1.22 2.5 2v19.76c0 .78.35 1.43.68 2zm14.4-12.42l-2.5-2.5-8.18-8.18 9.59 5.54a1.5 1.5 0 010 2.6l-.91.54zm-10.68 10.1l8.18-8.18 2.5-2.5.91.54a1.5 1.5 0 010 2.6l-9.59 5.54z" />
             </svg>
             <span>
-              <span className="block text-xs text-slate-300 leading-none">Get it on</span>
+              <span className="block text-xs text-white/70 leading-none">Get it on</span>
               <span className="block text-base leading-tight">Google Play</span>
             </span>
           </a>
-          <a
-            href="#how-it-works"
-            className="px-6 py-3.5 rounded-xl border-2 border-slate-200 text-slate-700 font-semibold hover:border-slate-400 transition-colors w-full sm:w-auto text-center"
-          >
-            See how it works
-          </a>
         </div>
-
-        {/* Airmail stripe accent — brand motif */}
-        <div className="airmail-stripe h-2 w-48 mx-auto mt-12 rounded-full opacity-70"></div>
-
-        {/* Mobile app mockup */}
-        <div className="mt-16 max-w-xs mx-auto">
-          <div className="relative bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl shadow-slate-400/30 border-4 border-slate-800">
-            {/* Notch */}
-            <div className="absolute top-3 left-1/2 -translate-x-1/2 w-20 h-5 bg-slate-900 rounded-full z-10"></div>
-            {/* Screen */}
-            <div className="bg-[#E8EAF2] rounded-[2rem] overflow-hidden">
-              {/* Status bar */}
-              <div className="bg-[#0C1461] px-5 pt-7 pb-3 flex items-center justify-between">
-                <span
-                  className="text-white text-lg"
-                  style={{ fontFamily: "var(--font-pacifico)" }}
-                >
-                  MailRecap
-                </span>
-                <span className="text-white/70 text-xs">9:41 AM</span>
-              </div>
-              {/* Mail list */}
-              <div className="p-3 space-y-2 bg-white">
-                {[
-                  { from: "Chase Bank", subject: "Statement ready — action needed", tag: "Finance", urgent: true },
-                  { from: "USPS", subject: "Package arriving Thursday", tag: "Delivery", urgent: false },
-                  { from: "City of Portland", subject: "Water bill — $48 due in 5 days", tag: "Bills", urgent: true },
-                  { from: "Amazon", subject: "Your return was received", tag: "Delivery", urgent: false },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-                    <div className="w-8 h-8 rounded-full bg-[#D42232]/10 flex items-center justify-center shrink-0 text-[#D42232] font-bold text-xs">
-                      {item.from[0]}
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <p className="font-semibold text-slate-900 text-xs truncate">{item.from}</p>
-                      <p className="text-slate-500 text-[10px] truncate">{item.subject}</p>
-                    </div>
-                    {item.urgent && (
-                      <div className="w-2 h-2 rounded-full bg-[#D42232] shrink-0"></div>
-                    )}
-                  </div>
-                ))}
-              </div>
-              {/* Bottom bar */}
-              <div className="bg-white border-t border-slate-100 px-4 py-2 flex justify-around">
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="w-5 h-5 rounded bg-[#D42232]/10 flex items-center justify-center text-[10px]">📬</div>
-                  <span className="text-[9px] text-[#D42232] font-medium">Inbox</span>
-                </div>
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="w-5 h-5 rounded bg-slate-100 flex items-center justify-center text-[10px]">🔔</div>
-                  <span className="text-[9px] text-slate-400">Alerts</span>
-                </div>
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="w-5 h-5 rounded bg-slate-100 flex items-center justify-center text-[10px]">⚙️</div>
-                  <span className="text-[9px] text-slate-400">Settings</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p className="text-white/55 text-sm mt-6">5 free scans · No credit card required</p>
       </div>
     </section>
   );

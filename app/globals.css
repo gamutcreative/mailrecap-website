@@ -2,12 +2,10 @@
 
 @theme inline {
   --color-brand-red: #D42232;
-  --color-brand-red-dark: #a81b28;
-  --color-brand-navy: #0C1461;
-  --color-brand-navy-light: #1a2480;
-  --color-brand-bg: #E8EAF2;
-  --color-brand-teal: #0d9488;
-  --color-brand-teal-light: #ccfbf1;
+  --color-brand-red-dark: #b01c29;
+  --color-brand-bg: #FAF8F4;
+  --color-brand-bg-alt: #F3EFE9;
+  --color-brand-dark: #111827;
 }
 
 html {
@@ -15,21 +13,6 @@ html {
 }
 
 body {
-  background: #ffffff;
-  color: #0f172a;
-}
-
-/* Airmail diagonal stripe accent */
-.airmail-stripe {
-  background: repeating-linear-gradient(
-    -45deg,
-    #D42232,
-    #D42232 8px,
-    #ffffff 8px,
-    #ffffff 16px,
-    #0C1461 16px,
-    #0C1461 24px,
-    #ffffff 24px,
-    #ffffff 32px
-  );
+  background: #FAF8F4;
+  color: #111827;
 }
